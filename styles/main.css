@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.s25 {
+  max-width: 100%;
+  width: 100%;
+}
+
+img {
+  background-color: #000000;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+  background-color: #000000;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+}
+
+header nav {
+  width: 300px;
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: blue;
+  font-size: 16px;
+}
+
+.alert-primary {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  background-color: rgb(255, 255, 235);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 10px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.accordion {
+  margin: auto;
+}
+
+.main-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.text-main {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.main-container h2 {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.main-container p:last-child {
+  width: 100%;
+  font-size: 0.675rem;
+  font-weight: 300;
+}
+
+.submit {
+  width: 300px;
+  border: 1px solid burlywood;
+  background-color: burlywood;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.25s linear;
+}
+
+button:hover {
+  background-color: rgb(8, 26, 225);
+  color: burlywood;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #000000;
+}
+
+.carousel {
+  width: auto;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 10px;
+  background-color: rgb(255, 248, 255);
+}
+
+@media screen and (max-width: 52em) {
+  html {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .s25 {
+    width: 100%;
+  }
+  .submit {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 50em) {
+  html {
+    font-size: 12px;
+  }
+  .submit {
+    width: 100px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+$main-color: #000000;
+$fullwidth: 100%;
+$White: #fff;
+$padding: 10px;
+
+
+@mixin flexbox {
+    display: flex;
+}
+
+@mixin  tablets {
+   @media screen and (max-width: 52em) {@content};
+}
+
+@mixin phones {
+  @media screen and (max-width: 50em) {@content};
+}
